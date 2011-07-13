@@ -1,0 +1,132 @@
+body {
+  background-color: #666;
+  font-size: 80%;
+  font-family: sans-serif;
+}
+
+#root {
+  width: 754px;
+  margin: 0 auto;
+}
+
+.cols {
+  margin-top: 8px;
+  display: table;
+  width: 100%;
+}
+
+.col-1 {
+  display: table-cell;
+  width: 50%;
+  padding-right: 4px;
+}
+
+.col-2 {
+  display: table-cell;
+  width: 50%;
+  padding-left: 4px;
+}
+
+#save-dialog {
+  display:none;
+}
+
+#save-button-container {
+  margin-top: 8px;
+  text-align: right;
+}
+
+#palettes {
+  height: 400px;
+}
+
+#palettes h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 80%;
+}
+
+#palettes .palette-content {
+  padding: 8px;
+}
+
+.palette-item {
+  position: relative;
+  width: 330px;
+  margin-bottom: 4px;
+  box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.6);
+}
+
+.palette-item img {
+  display: block;
+  width: 100%;
+}
+
+.palette-item .title {
+  position: absolute;
+  left: 3px;
+  bottom: 3px;
+  font-size: 70%;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.palette-item .actions {
+  position: absolute;
+  right: 3px;
+  bottom: 0px;
+}
+
+.palette-item .actions button {
+  width: 24px;
+  height: 24px;
+}
+
+.item-transparency {
+  height: 50px;
+}
+
+.palette-content {
+}
+
+#layers-container {
+}
+
+#layers-container h3 {
+  font-size: 0.8em;
+  margin: 2px 2px 8px 2px;
+  padding: 0.2em 0.5em;
+}
+
+#layers {
+  height: 400px;
+  overflow: auto;
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+}
+
+#layers .placeholder {
+  text-align: center;
+}
+
+#canvas-container {
+  padding: 68px 0;
+  width: 754px;
+  background-image: url("rack.png");
+  overflow: hidden;
+  position:relative;
+}
+
+#das-canvas {
+  box-shadow: 0px 12px 30px 20px rgba(0,0,0,0.7);
+}
+
+#das-canvas-overlay {
+  position:absolute;
+  width:754px;
+  height:138px;
+  background-image: url("../elements/controls.png");
+}
+
